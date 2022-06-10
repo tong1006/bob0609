@@ -21,4 +21,4 @@ jobs:
             
     - name: Test rule 001
       run: |
-              pytest
+              pytest -vv

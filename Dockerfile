@@ -16,5 +16,5 @@ LABEL version = "1.0"
 
 LABEL Copyright = “2022”
 
-CMD python3 ttt.py
+CMD python3 server.py
 

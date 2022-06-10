@@ -18,4 +18,7 @@ jobs:
     - name: python test
       run: |
               python3 server.py >log.txt 2>1 &
-              pytest -vv
+            
+    - name: Test rule 001
+      run: |
+              pytest

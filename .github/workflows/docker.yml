@@ -19,8 +19,8 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: boblin1006
-          password: f06c36b7-1e50-44d4-a8ab-9fe7769b3737
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.DOCKERKEY}}
       -
         name: Build and push
         uses: docker/build-push-action@v3

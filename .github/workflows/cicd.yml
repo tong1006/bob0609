@@ -1,3 +1,19 @@
- - name: Test rule 001
+name: Test rule 001
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  ci:
+    name: citest
+    runs-on: ubuntu-latest
+    steps:    
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v3
+    - name: dependency
       run: |
-        pytest
+              python -m pip install --upgrade pip
+              pip3 install -r requirements.txt
+      run: |
+              pytest

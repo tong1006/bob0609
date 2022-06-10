@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: boblin1006/test0610:latest
+          tags: boblin1006/test0610:new
